@@ -13,5 +13,6 @@ and offers:
     - BUTTON_INIT: Init a button
     - BUTTON_GET: get status of a button (pressed/released)
     - BUTTON_WAIT: wait for a button to be pressed or released with timeout
+    - BUTTON_ACK: let the user acknowledge something with timeout
 
-There's a example in main.c, which shows the basics.
+There are examples in main.c, which show the basics.

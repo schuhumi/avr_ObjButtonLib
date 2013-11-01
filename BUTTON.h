@@ -13,6 +13,7 @@ typedef struct {
 void BUTTON_INIT (type_BUTTON *device);
 uint8_t BUTTON_GET (type_BUTTON *device);
 uint8_t BUTTON_WAIT (type_BUTTON *device, uint8_t press_release, uint16_t timeout_ms);
+uint8_t BUTTON_ACK (type_BUTTON *device, uint16_t timeout_ms);
 
 #define	BUTTON_PRESS	False
 #define BUTTON_RELEASE	True

@@ -32,19 +32,33 @@ int main (void)
 	
 	while (1)	/// MAIN LOOP
 	{
-		if(BUTTON_GET(&button_A))
-		{
-			// Do this or that
-		}
 		
-		if(BUTTON_WAIT(&button_B, BUTTON_RELEASE, 2000) == Success)
-		{
-			// button was released within 2000ms
-		}
-		else
-		{
-			// timeout of 2000ms ran out
-		}
+		/// Example 1
+			if(BUTTON_GET(&button_A))
+			{
+				// Do this or that
+			}
+		
+		/// Exampe 2
+			if(BUTTON_WAIT(&button_B, BUTTON_RELEASE, 2000) == Success)
+			{
+				// button was released within 2000ms
+			}
+			else
+			{
+				// timeout of 2000ms ran out
+			}
+		
+		/// Example 3
+			// display information
+			if(BUTTON_ACK(&button_B, 20000) == Success)
+			{
+				// user acknowledged information by pressing button B within 20s
+			}
+			else
+			{
+				// user didn't react to information within 20s
+			}
 		
 	}
 

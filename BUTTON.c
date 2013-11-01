@@ -37,3 +37,14 @@ uint8_t BUTTON_WAIT (type_BUTTON *device, uint8_t press_release, uint16_t timeou
 		_delay_ms(1);
 	return Success;
 }
+
+uint8_t BUTTON_ACK (type_BUTTON *device, uint16_t timeout_ms)
+{
+	if(BUTTON_WAIT(device, BUTTON_RELEASE, timeout_ms) != Success)
+		return Error;
+	if(BUTTON_WAIT(device, BUTTON_PRESS, timeout_ms) != Success)
+		return Error;
+	if(BUTTON_WAIT(device, BUTTON_RELEASE, timeout_ms) != Success)
+		return Error;
+	return Success;
+}
