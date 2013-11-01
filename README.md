@@ -6,6 +6,7 @@ This is a more object-orientated button-library for AVR Microcontrollers written
 This library consits of:
  - BUTTON.h
  - BUTTON.c
+
 and offers:
  - handle infinite number of buttons with no duplicate code
  - functions:
