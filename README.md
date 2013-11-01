@@ -1,7 +1,7 @@
 avr_ObjLcdLib
 =============
 
-This is a more object-orientated HD44780 LCD-library for AVR Microcontrollers written in C.
+This is a more object-orientated button-library for AVR Microcontrollers written in C.
 
 This library consits of:
  - BUTTON.h
