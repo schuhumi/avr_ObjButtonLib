@@ -1,4 +1,4 @@
-avr_ObjLcdLib
+avr_ObjButtonLib
 =============
 
 This is a more object-orientated button-library for AVR Microcontrollers written in C.
